@@ -15,7 +15,7 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |5|Tipos de datos dinamicos en Dart|5|Finalizada|
 |6|Mapas|6|Finalizada|
 |7|Listas, Iterables y Conjuntos de Datos.|9|Finalizada|
-|8|Funciones|10|Activa|
+|8|Funciones.|10|Activa|
 
 
 ### LISTA DE HERRAMIENTAS
