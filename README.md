@@ -13,7 +13,7 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |3|Hola Mundo desde DART|10|Finalizada|
 |4|Tipos de datos en DART|5|Finalizada|
 |5|Tipos de datos dinamicos en Dart|5|Finalizada|
-|6|Mapas|6|Finalizada|
+|6|Mapas.|6|Finalizada|
 |7|Listas, Iterables y Conjuntos de Datos.|9|Finalizada|
 |8|Funciones.|11|Activa|
 
