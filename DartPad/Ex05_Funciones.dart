@@ -1,106 +1,123 @@
-void main() {
-  final double totalCarList;
-  //1. Lllamado de una función sin parámetros
-  greetEveryone();
+      void main() {
 
-  //2. LLamado de una función que retorna valores
-  //a) Sin almacenar el valor en una variable
-  print("Hoy es el dia número: ${getDayNumber()} del mes");
+        final double totalCalList;
+        //1. Llamado de una funcion sin parametros
+        greetEveryone();
 
-  //b) Almacenando el valor de la función en una nueva variable
-  final int diaMes;
-  diaMes = getDayNumber();
-  print("En tres días será: ${diaMes+3}");
-  
-  //3. Llamado de una función con un solo parámtro obligatorio
-  //a) Llamado correcto
-  print(greetSomeone("Janeth"));
-  //b) Llamado incorrecto con parametros 
-  print(greetSomeone(4));
-  print(greetSomeone(-312));
-  print(greetSomeone(43.141516));
-  print(greetSomeone(true));
-print("-----------------------------------------------------------------");
+        //2. LLAMADO DE UNA FUNCION QUE RETORNA VALORES
+        //A)  SIN ALMACENAR EL VALOR DE UNA VARIABLE
+        print("hoy es el dia numero: ${getDayNumber()} del mes.");
+        //B) ALAMACENADO EL VALOR DE LA FUNCION EN UNA NUEVA VARIABLE
+        final int diaMes;
+        diaMes = getDayNumber();
+        print("Entre tres dias sera: ${diaMes+3}");
 
-//C) MISMO EXPERIMENTO PERO AHORA CON LA FUNCION  PARAMETROS TIPADOS
-/*print(greetSomeoneTyped("Bruno"));
-print(greetSomeoneTyped(4));
-print(greetSomeoneTyped(-312));
-print(greetSomeoneTyped(3.1415));
-print(greetSomeoneTyped(true));
-*/
-/*3.2
- print(greetSomeone()); Esta no se puede ejecutar porque si no se define 
- los parametros de una funcion por defaul estan definidos como obligatorios
- */
-  //4. Llamado de una funcion con parametros opcionales
-  //4.1 ENCVIANDO AMBOS PARAMETROS
-  print(greetHourOfDay("Alexis",9));
-  //4.2 SOLO ENVIADO EL OBLIGATORIO
-  print(greetHourOfDay("Bruno", null));
+      //3. LLAMADO DE UNA FUNCION CON SOLO PARAMETRO OBLIGATORIO
 
-  //5. FUNCIONES LAMBDA -Las funciones lambda, mejor conocidas cómo funciones 
-  //anonimas o funciones simplificadas se ejecutas de manera simple y no frecuentre en la ejecución de un  programa o sistema, las funciones flecha solo deben llevar una isntruccion
-  var calculaCosto =(double productQueantity, double productPrice,
-  double percentageDiscount) => (productQueantity * productPrice)*((100-percentageDiscount)/100);
+      //A) LLAMADO CORRECTO
+      print(greetSomeone("Bruno"));
+      //B) DECALARDO COMO DYNAMIC
+      print(greetSomeone(4));
+      print(greetSomeone(-312));
+      print(greetSomeone(3.1415));
+      print(greetSomeone(true));
+      print("-----------------------------------------------------------------");
 
-  double cantidadProducto = 5;
-  double precioProducto = 125.50;
-  double descuento = 2.5;
-  print("""
-  Costo del producto: ${cantidadProducto}
-  Cantidad: ${cantidadProducto}
-  Descuento: ${descuento}
-  --------------------------------------------
-  Costo del carrito de compras: ${calculaCosto(cantidadProducto, 
-  precioProducto, descuento)}
-  """);
-}
+      //C) MISMO EXPERIMENTO PERO AHORA CON LA FUNCION  PARAMETROS TIPADOS
+      /*print(greetSomeoneTyped("Bruno"));
+      print(greetSomeoneTyped(4));
+      print(greetSomeoneTyped(-312));
+      print(greetSomeoneTyped(3.1415));
+      print(greetSomeoneTyped(true));
+      */
+      /*3.2
+       print(greetSomeone()); Esta no se puede ejecutar porque si no se define 
+       los parametros de una funcion por defaul estan definidos como obligatorios
+       */
+        //4. Llamado de una funcion con parametros opcionales
+        //4.1 ENCVIANDO AMBOS PARAMETROS
+        print(greetHourOfDay("Janeth",9));
+        //4.2 SOLO ENVIADO EL OBLIGATORIO
+        print(greetHourOfDay("Alexis", null));
+        print(greetHourOfDay("Bruno"));
 
-//FUNCIONES Y PARAMETROS 
-  
-  //DECLARACION
-  
-  //1. FUNCION SIN PARAMETROS
-void greetEveryone()
+        //5. FUNCIONES LAMBA - LAS FUNCIONES LAMBA, MEJOR CONOCIDAS COMO FUNCIONES ANONIMAS O FUNCIONES SIMPLEFICADAS, SE EJECUTAN DE MANERA SIMPLE Y NO FRECUENTE EN LA EJECUCUION DE UN PROGRAMA O UN SISTEMA
 
-{
-  print("Hola a todas y todos :D");
-}
-//2. Funcion sin parametro, que retorna datos 
-getDayNumber()
-{
-  DateTime now = DateTime.now();
-  int day = now.day;
-  return day;
-}
+        var calculaCosto=(double productQuanbtity, double doubleProductPrice, double percentageDisscount)=>(productQuanbtity * doubleProductPrice)*((100-percentageDisscount)/100);
+        double cantidadProducto = 5;
+        double precioProducto = 125.50;
+        double descuento = 2.5;
+        print("""
+        Costo del producto: ${precioProducto}
+        Cantidad: ${cantidadProducto}
+        Descuento: ${descuento}
+        ----------------------------------------------------------------
+        Costo del carrito de compras: ${calculaCosto(cantidadProducto, precioProducto, descuento)}
+        """);
+      //6. llamado de la funcion con parametros nombrados
+        print(infoCarListStatus(buyerName: "Alexandra"));
 
-//3. FUNCION QUE RECIBE UN PARAMETRO, EN DART SI NO SE ESPECIFICA COMO OPCIONAL SIEMPRE SERA OBLIGATORIO
-String greetSomeone(personName)
-{
-  return("Hola, ${personName}");
-}
+        //6.1 llamado de una funcion con los parametros en desorden posicional
+        print(infoCarListStatus(
+          status: "En espera de pago",
+          amountCarList: 2416.20,
+          buyerName: "Janeth"
+        ));
+      }
 
-String greetSomeoneTyped(String personName)
-{
-  return("Hola, ${personName}");
-}
+      //FUNCIONES Y PARAMETROS 
+
+        //DECLARACION
+
+        //1. FUNCION SIN PARAMETROS
+      void greetEveryone()
+
+      {
+        print("Hola a todas y todos :D");
+      }
+      //2. Funcion sin parametro, que retorna datos 
+      getDayNumber()
+      {
+        DateTime now = DateTime.now();
+        int day = now.day;
+        return day;
+      }
+
+      //3. FUNCION QUE RECIBE UN PARAMETRO, EN DART SI NO SE ESPECIFICA COMO OPCIONAL SIEMPRE SERA OBLIGATORIO
+      String greetSomeone(personName)
+      {
+        return("Hola, ${personName}");
+      }
+
+      String greetSomeoneTyped(String personName)
+      {
+        return("Hola, ${personName}");
+      }
+
+      // 4. FUNCIÓN CON PARÁMETROS OPCIONALES
+      String greetHourOfDay(String personName, [int? hourDay]) //Puede ser opcional
+      {
+        hourDay ??= DateTime.now().hour; // si es nulo entonces ..
+        print("Hora: ${hourDay}");
+        String saludo;
+
+        if (hourDay >= 6 && hourDay < 12) {
+          saludo = "Buenos Días";
+        } else if (hourDay >= 12 && hourDay < 18) {
+          saludo = "Buenas Tardes";
+        } else {
+          saludo = "Buenas Noches";
+        }
+
+        return "$saludo, $personName";
 
 
-// 4. FUNCIÓN CON PARÁMETROS OPCIONALES
-//int? Puede ser opcional  --NullSafety
-String greetHourOfDay(String personName, int? hora) {
-  hora ??= DateTime.now().hour;
-  print("Hora: ${hora}");
-  String saludo;
-
-  if (hora >= 6 && hora < 12) {
-    saludo = "Buenos días";
-  } else if (hora >= 12 && hora < 18) {
-    saludo = "Buenas tardes";
-  } else {
-    saludo = "Buenas noches";
-  }
-
-  return "${saludo}, ${personName}";
-}
+      }
+      String infoCarListStatus({
+        required String buyerName,
+        double amountCarList = 0.0,
+        String status = "Selección de productos",
+      }) {
+        return "El carrito de compras de: $buyerName, tiene un total de: "
+            "\$${amountCarList} y actualmente está en estatus: $status";
+      }
