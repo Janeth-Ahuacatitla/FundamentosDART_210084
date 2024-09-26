@@ -17,6 +17,7 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |7|Listas, Iterables y Conjuntos de Datos.|9|Activa|
 
 
+
 ### LISTA DE HERRAMIENTAS
 ![DART](https://img.shields.io/badge/Dart-0175c2?style=for-the-badge&logo=dart&logoColor=white)
 
