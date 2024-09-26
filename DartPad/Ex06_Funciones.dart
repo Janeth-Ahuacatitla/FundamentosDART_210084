@@ -95,7 +95,7 @@ String greetHourOfDay(String personName, int? hora) {
   String saludo;
 
   if (hora >= 6 && hora < 12) {
-    saludo = "Buenos días";
+    saludo = "Buenos días.";
   } else if (hora >= 12 && hora < 18) {
     saludo = "Buenas tardes";
   } else {
