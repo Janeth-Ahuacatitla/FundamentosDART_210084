@@ -18,7 +18,7 @@ class Square {
   double get side => _side;
 
   set side(double value) {
-    print("Asignando un nuevo valor al lado: $value");
+    print("Asignandoo un nuevo valor al lado: $value");
     if (value < 0) throw 'El valor del lado debe ser mayor a 0.';
     _side = value;
   }
