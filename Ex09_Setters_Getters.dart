@@ -9,7 +9,7 @@ Lado del Cuadrado: ${mySquare.side}
 }
 
 class Square { 
-  double _side; //Formula para calcular el Area del lado * lado 
+  double _side; //Fórmula para calcular el Area del lado * lado 
   Square({required double side}) : _side = side;
 
   double get area => _side * _side; 
