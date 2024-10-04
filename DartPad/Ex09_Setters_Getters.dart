@@ -2,7 +2,7 @@ void main() {
   final mySquare = Square(side: 18); 
 
   print("""
-Lado del Cuadrado: ${mySquare.side}
+ Lado del Cuadrado: ${mySquare.side}
 Área que ocupa: ${mySquare.calculateArea()}""");
 
   mySquare.side = -32; 
