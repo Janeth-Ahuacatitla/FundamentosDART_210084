@@ -24,7 +24,7 @@ void main()
       name: "Martha",
       firstLastname: "Flores",
       gender: "Mujer",
-      bloodGroup: "O -",
+      bloodGroup: "O-",
       birthdate: DateTime(2008, 01, 08));
 
   print(marthaFlores);
