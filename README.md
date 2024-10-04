@@ -18,8 +18,7 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |8|Funciones y Parámetros.|11|✅Finalizada|
 |9|Clases y Sobreescritura de Métodos Nativos|9|✅Finalizada|
 |10|Constructores Nombrados|8|⭐Activa|
-|11|Getters (Lectura Controlada) y Setters(Modificación Controlada) Nombrados|9|⭐Activa|
-
+|11|Getters (Lectura Controlada) y Setters(Modificación Controlada) Nombrados.|9|⭐Activa|
 
 
 ### LISTA DE HERRAMIENTAS
