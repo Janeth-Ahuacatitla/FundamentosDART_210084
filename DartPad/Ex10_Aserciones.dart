@@ -1,5 +1,5 @@
 void main() {
-  final mySquare = Square(side: 10); 
+  final mySquare = Square(side: -10); 
 
   print(""" El lado del cuadrado es de: ${mySquare._side}
   su área es de: ${mySquare.calculateArea()}""");
