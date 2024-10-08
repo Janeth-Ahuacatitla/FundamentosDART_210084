@@ -22,6 +22,7 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |12|Clases Abstractas|8|⭐Activa|
 |Tarea 04|Uso de las clases Abstractas en el caso de estudio|10|⭐Activa|
 |13|Aserciones|3|⭐Activa|
+|14|Mixis|8|⭐Activa|
 
 
 
