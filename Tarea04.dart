@@ -75,8 +75,11 @@ void main() {
   paciente3.registrarDefuncion(); 
   paciente3.imprimirDatosPaciente();
 }
+// Definición de enumeraciones para tipo de usuario
 enum usuario { Nuevo, Registrado, Finado }
+// Definición de enumeraciones para estatus de vida
 enum EstatusVida { Vivo, Fallecido, Desconocido }
+// Definición de enumeraciones para estatus médico
 enum EstatusMedico { Activo, Inactivo } 
 abstract class Persona {
   int id;
