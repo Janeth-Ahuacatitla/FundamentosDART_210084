@@ -19,7 +19,7 @@ void main() {
 }
 
 // Esta función simula una petición HTTP que devuelve un Future<String>.
-// El Future se resuelve después de un retraso de 1 segundo.
+// El Future se resuelve después de un retraso de 1 segundo
 Future<String> httpGet(String url) {
   return Future.delayed(
     const Duration(seconds: 1), 
