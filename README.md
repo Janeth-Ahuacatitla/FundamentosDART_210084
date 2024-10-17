@@ -19,10 +19,14 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |9|Clases y Sobreescritura de Métodos Nativos|9|✅Finalizada|
 |10|Constructores Nombrados|8|✅Finalizada|
 |11|Getters(Lectura Controlada) y Setters(Modificación Controlada).|9|✅Finalizada|
-|12|Clases Abstractas|11|⭐Activa|
-|Tarea 04|Uso de las clases Abstractas en el caso de estudio|10|⭐Activa|
-|13|Aserciones|3|⭐Activa|
-|14|Mixis.|9|⭐Activa|
+|12|Clases Abstractas|11|✅Finalizada|
+|Tarea 04|Uso de las clases Abstractas en el caso de estudio|10|✅Finalizada|
+|13|Aserciones|3|✅Finalizada|
+|14|Mixis.|9|✅Finalizada|
+|15|Futures|5|⭐Activa|
+|16|Async Await|5|⭐Activa|
+
+
 
 
 
