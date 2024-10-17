@@ -25,6 +25,7 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |14|Mixis.|9|✅Finalizada|
 |15|Futures|5|⭐Activa|
 |16|Async Await|5|⭐Activa|
+|17|Try Catch on Finally|6|⭐Activa|
 
 
 
