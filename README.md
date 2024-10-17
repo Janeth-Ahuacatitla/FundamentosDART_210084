@@ -22,7 +22,7 @@ Proyecto de clase para la Unidad 1 de la asginatura de Desarrollo Móvil Integra
 |12|Clases Abstractas|11|✅Finalizada|
 |Tarea 04|Uso de las clases Abstractas en el caso de estudio|10|✅Finalizada|
 |13|Aserciones|3|✅Finalizada|
-|14|Mixis.|9|✅Finalizada|
+|14|Mixins.|9|✅Finalizada|
 |15|Futures|5|⭐Activa|
 |16|Async Await|5|⭐Activa|
 |17|Try Catch on Finally|6|⭐Activa|
